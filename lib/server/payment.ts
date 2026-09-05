@@ -1,6 +1,6 @@
 import { z } from 'zod';
 import { fromBase64, normalizeSuiAddress } from '@mysten/sui/utils';
-import { verifyTransactionSignature } from '@mysten/sui/verify';
+import { verifyTreasurySignature } from './signature';
 import { AppError, context, checked, audit } from './db';
 import { getRun } from './payroll';
 import { config } from './config';
@@ -133,15 +133,7 @@ export async function submit(ctx: Context, data: unknown) {
       'Approval expired or transaction changed. Run the payment checks again.',
     );
   const raw = fromBase64(bytes);
-  const key = await verifyTransactionSignature(raw, signature);
-  if (
-    normalizeSuiAddress(key.toSuiAddress()) !==
-    normalizeSuiAddress(run.plan.treasury)
-  )
-    throw new AppError(
-      'Signature does not belong to the authorized treasury.',
-      403,
-    );
+  await verifyTreasurySignature(raw, signature, run.plan.treasury, sui(config()));
   // Persist the deterministic transaction digest before sending. A lost response is recoverable without a second payment.
   checked(
     await ctx.client
