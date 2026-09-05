@@ -1,0 +1,45 @@
+{
+  "checkedAt": "2026-09-05T09:14:17.955Z",
+  "checks": [
+    {
+      "label": "Authenticated workspace creation",
+      "pass": true
+    },
+    {
+      "label": "Contractor persistence",
+      "pass": true
+    },
+    {
+      "label": "Source import persisted",
+      "pass": true
+    },
+    {
+      "label": "Gonka mapped source and preserved exact base",
+      "pass": true
+    },
+    {
+      "label": "Duplicate invoice excluded deterministically",
+      "pass": true
+    },
+    {
+      "label": "Real Sui simulation through app API",
+      "pass": true
+    },
+    {
+      "label": "Exact approval persisted and invoices reserved",
+      "pass": true
+    },
+    {
+      "label": "Invalid signature blocked before submission",
+      "pass": true
+    },
+    {
+      "label": "No transaction submitted",
+      "pass": true
+    },
+    {
+      "label": "Concurrent duplicate approval rejected",
+      "pass": true
+    }
+  ]
+}

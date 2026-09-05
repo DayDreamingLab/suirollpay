@@ -1,0 +1,6 @@
+[package]
+name = "suiroll"
+edition = "2024.beta"
+
+[addresses]
+suiroll = "0x0"

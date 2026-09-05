@@ -1,0 +1,93 @@
+{
+  "checkedAt": "2026-09-05T09:02:00.905Z",
+  "results": [
+    {
+      "label": "Schema: organizations",
+      "pass": true
+    },
+    {
+      "label": "Schema: contractors",
+      "pass": true
+    },
+    {
+      "label": "Schema: payroll_runs",
+      "pass": true
+    },
+    {
+      "label": "Schema: ai_operations",
+      "pass": true
+    },
+    {
+      "label": "Schema: approvals",
+      "pass": true
+    },
+    {
+      "label": "Schema: transactions",
+      "pass": true
+    },
+    {
+      "label": "Schema: paid_invoices",
+      "pass": true
+    },
+    {
+      "label": "Schema: invoice_claims",
+      "pass": true
+    },
+    {
+      "label": "Schema: audit_logs",
+      "pass": true
+    },
+    {
+      "label": "Create temporary validation identity 0",
+      "pass": true
+    },
+    {
+      "label": "Create organization 0",
+      "pass": true
+    },
+    {
+      "label": "Password sign-in 0",
+      "pass": true
+    },
+    {
+      "label": "RLS exposes only own organization 0",
+      "pass": true
+    },
+    {
+      "label": "Client cannot forge paid state 0",
+      "pass": true
+    },
+    {
+      "label": "Privileged RPC is not callable by client 0",
+      "pass": true
+    },
+    {
+      "label": "Create temporary validation identity 1",
+      "pass": true
+    },
+    {
+      "label": "Create organization 1",
+      "pass": true
+    },
+    {
+      "label": "Password sign-in 1",
+      "pass": true
+    },
+    {
+      "label": "RLS exposes only own organization 1",
+      "pass": true
+    },
+    {
+      "label": "Client cannot forge paid state 1",
+      "pass": true
+    },
+    {
+      "label": "Privileged RPC is not callable by client 1",
+      "pass": true
+    },
+    {
+      "label": "Anonymous clients cannot access organizations",
+      "pass": true
+    }
+  ]
+}

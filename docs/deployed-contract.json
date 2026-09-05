@@ -1,0 +1,375 @@
+{
+  "modules": [
+    {
+      "datatypes": [
+        {
+          "abilities": [
+            3,
+            4
+          ],
+          "typeParameters": [],
+          "fields": [
+            {
+              "name": "id",
+              "position": 0,
+              "type": {
+                "typeParameterInstantiation": [],
+                "type": 10,
+                "typeName": "0x0000000000000000000000000000000000000000000000000000000000000002::object::UID"
+              }
+            }
+          ],
+          "variants": [],
+          "typeName": "0x43fddfacc36a27ac8bdc957b8ee961da3d5aee2562f9e88b7cfd31c254cea35f::payroll_registry::AdminCap",
+          "definingId": "0x43fddfacc36a27ac8bdc957b8ee961da3d5aee2562f9e88b7cfd31c254cea35f",
+          "module": "payroll_registry",
+          "name": "AdminCap",
+          "kind": 1
+        },
+        {
+          "abilities": [
+            1,
+            2
+          ],
+          "typeParameters": [
+            {
+              "constraints": [],
+              "isPhantom": true
+            }
+          ],
+          "fields": [
+            {
+              "name": "organization_hash",
+              "position": 0,
+              "type": {
+                "typeParameterInstantiation": [
+                  {
+                    "typeParameterInstantiation": [],
+                    "type": 3
+                  }
+                ],
+                "type": 9
+              }
+            },
+            {
+              "name": "run_hash",
+              "position": 1,
+              "type": {
+                "typeParameterInstantiation": [
+                  {
+                    "typeParameterInstantiation": [],
+                    "type": 3
+                  }
+                ],
+                "type": 9
+              }
+            },
+            {
+              "name": "plan_hash",
+              "position": 2,
+              "type": {
+                "typeParameterInstantiation": [
+                  {
+                    "typeParameterInstantiation": [],
+                    "type": 3
+                  }
+                ],
+                "type": 9
+              }
+            },
+            {
+              "name": "total_amount",
+              "position": 3,
+              "type": {
+                "typeParameterInstantiation": [],
+                "type": 6
+              }
+            },
+            {
+              "name": "recipient_count",
+              "position": 4,
+              "type": {
+                "typeParameterInstantiation": [],
+                "type": 6
+              }
+            },
+            {
+              "name": "executor",
+              "position": 5,
+              "type": {
+                "typeParameterInstantiation": [],
+                "type": 1
+              }
+            }
+          ],
+          "variants": [],
+          "typeName": "0x43fddfacc36a27ac8bdc957b8ee961da3d5aee2562f9e88b7cfd31c254cea35f::payroll_registry::PayrollExecuted",
+          "definingId": "0x43fddfacc36a27ac8bdc957b8ee961da3d5aee2562f9e88b7cfd31c254cea35f",
+          "module": "payroll_registry",
+          "name": "PayrollExecuted",
+          "kind": 1
+        },
+        {
+          "abilities": [
+            4
+          ],
+          "typeParameters": [],
+          "fields": [
+            {
+              "name": "id",
+              "position": 0,
+              "type": {
+                "typeParameterInstantiation": [],
+                "type": 10,
+                "typeName": "0x0000000000000000000000000000000000000000000000000000000000000002::object::UID"
+              }
+            },
+            {
+              "name": "paused",
+              "position": 1,
+              "type": {
+                "typeParameterInstantiation": [],
+                "type": 2
+              }
+            },
+            {
+              "name": "executed_runs",
+              "position": 2,
+              "type": {
+                "typeParameterInstantiation": [
+                  {
+                    "typeParameterInstantiation": [
+                      {
+                        "typeParameterInstantiation": [],
+                        "type": 3
+                      }
+                    ],
+                    "type": 9
+                  },
+                  {
+                    "typeParameterInstantiation": [
+                      {
+                        "typeParameterInstantiation": [],
+                        "type": 3
+                      }
+                    ],
+                    "type": 9
+                  }
+                ],
+                "type": 10,
+                "typeName": "0x0000000000000000000000000000000000000000000000000000000000000002::table::Table"
+              }
+            }
+          ],
+          "variants": [],
+          "typeName": "0x43fddfacc36a27ac8bdc957b8ee961da3d5aee2562f9e88b7cfd31c254cea35f::payroll_registry::Registry",
+          "definingId": "0x43fddfacc36a27ac8bdc957b8ee961da3d5aee2562f9e88b7cfd31c254cea35f",
+          "module": "payroll_registry",
+          "name": "Registry",
+          "kind": 1
+        }
+      ],
+      "functions": [
+        {
+          "typeParameters": [],
+          "parameters": [
+            {
+              "reference": 2,
+              "body": {
+                "typeParameterInstantiation": [],
+                "type": 10,
+                "typeName": "0x0000000000000000000000000000000000000000000000000000000000000002::tx_context::TxContext"
+              }
+            }
+          ],
+          "returns": [],
+          "name": "init",
+          "visibility": 1,
+          "isEntry": false
+        },
+        {
+          "typeParameters": [],
+          "parameters": [
+            {
+              "reference": 2,
+              "body": {
+                "typeParameterInstantiation": [],
+                "type": 10,
+                "typeName": "0x43fddfacc36a27ac8bdc957b8ee961da3d5aee2562f9e88b7cfd31c254cea35f::payroll_registry::Registry"
+              }
+            },
+            {
+              "reference": 1,
+              "body": {
+                "typeParameterInstantiation": [],
+                "type": 10,
+                "typeName": "0x43fddfacc36a27ac8bdc957b8ee961da3d5aee2562f9e88b7cfd31c254cea35f::payroll_registry::AdminCap"
+              }
+            }
+          ],
+          "returns": [],
+          "name": "pause",
+          "visibility": 2,
+          "isEntry": false
+        },
+        {
+          "typeParameters": [
+            {
+              "constraints": []
+            }
+          ],
+          "parameters": [
+            {
+              "reference": 2,
+              "body": {
+                "typeParameterInstantiation": [],
+                "type": 10,
+                "typeName": "0x43fddfacc36a27ac8bdc957b8ee961da3d5aee2562f9e88b7cfd31c254cea35f::payroll_registry::Registry"
+              }
+            },
+            {
+              "reference": 1,
+              "body": {
+                "typeParameterInstantiation": [],
+                "type": 10,
+                "typeName": "0x43fddfacc36a27ac8bdc957b8ee961da3d5aee2562f9e88b7cfd31c254cea35f::payroll_registry::AdminCap"
+              }
+            },
+            {
+              "body": {
+                "typeParameterInstantiation": [
+                  {
+                    "typeParameterInstantiation": [],
+                    "type": 3
+                  }
+                ],
+                "type": 9
+              }
+            },
+            {
+              "body": {
+                "typeParameterInstantiation": [
+                  {
+                    "typeParameterInstantiation": [],
+                    "type": 3
+                  }
+                ],
+                "type": 9
+              }
+            },
+            {
+              "body": {
+                "typeParameterInstantiation": [
+                  {
+                    "typeParameterInstantiation": [],
+                    "type": 3
+                  }
+                ],
+                "type": 9
+              }
+            },
+            {
+              "body": {
+                "typeParameterInstantiation": [],
+                "type": 6
+              }
+            },
+            {
+              "body": {
+                "typeParameterInstantiation": [],
+                "type": 6
+              }
+            },
+            {
+              "reference": 2,
+              "body": {
+                "typeParameterInstantiation": [],
+                "type": 10,
+                "typeName": "0x0000000000000000000000000000000000000000000000000000000000000002::tx_context::TxContext"
+              }
+            }
+          ],
+          "returns": [],
+          "name": "record_execution",
+          "visibility": 2,
+          "isEntry": false
+        },
+        {
+          "typeParameters": [],
+          "parameters": [
+            {
+              "reference": 2,
+              "body": {
+                "typeParameterInstantiation": [],
+                "type": 10,
+                "typeName": "0x43fddfacc36a27ac8bdc957b8ee961da3d5aee2562f9e88b7cfd31c254cea35f::payroll_registry::Registry"
+              }
+            },
+            {
+              "reference": 1,
+              "body": {
+                "typeParameterInstantiation": [],
+                "type": 10,
+                "typeName": "0x43fddfacc36a27ac8bdc957b8ee961da3d5aee2562f9e88b7cfd31c254cea35f::payroll_registry::AdminCap"
+              }
+            }
+          ],
+          "returns": [],
+          "name": "unpause",
+          "visibility": 2,
+          "isEntry": false
+        }
+      ],
+      "name": "payroll_registry"
+    }
+  ],
+  "registry": {
+    "objectId": "0x6398a1cabf668f998eedd2b3da03f03787b2109a65983ae24f690bdfb7edcc07",
+    "version": "349181948",
+    "digest": "CNYVfAg3UdzgBTHjhpH4iSWR8mLuJiLk5oNpWvHY9RRg",
+    "owner": {
+      "$kind": "Shared",
+      "Shared": {
+        "initialSharedVersion": "349181946"
+      }
+    },
+    "type": "0x43fddfacc36a27ac8bdc957b8ee961da3d5aee2562f9e88b7cfd31c254cea35f::payroll_registry::Registry",
+    "json": {
+      "executed_runs": {
+        "id": "0x6f6da0389497fd2e60504f0bf9c89e5f11e6032fb9951a197ade98a953fce804",
+        "size": "1"
+      },
+      "id": "0x6398a1cabf668f998eedd2b3da03f03787b2109a65983ae24f690bdfb7edcc07",
+      "paused": false
+    }
+  },
+  "cap": {
+    "objectId": "0x596700a75ea656511077e506c26d9c0fa592df909887191db4cae93dc17faecb",
+    "version": "349181948",
+    "digest": "CaTsGeT4tmXtHGHh4AQqH62nCT1Skyp6nkK9fCuLPyRu",
+    "owner": {
+      "AddressOwner": "0xcfaf5d0daec9c244a0e62e5626d140b99d460e5cdd2821ab31560bee50bdeba3",
+      "$kind": "AddressOwner"
+    },
+    "type": "0x43fddfacc36a27ac8bdc957b8ee961da3d5aee2562f9e88b7cfd31c254cea35f::payroll_registry::AdminCap",
+    "json": {
+      "id": "0x596700a75ea656511077e506c26d9c0fa592df909887191db4cae93dc17faecb"
+    }
+  },
+  "coin": {
+    "coinMetadata": {
+      "id": "0xce3bcf36c28c6fcea2b307f52f441ac297d14797d6a4da106fdf423162d7149d",
+      "decimals": 6,
+      "name": "USDC",
+      "symbol": "USDC",
+      "description": "USDC is a US dollar-backed stablecoin issued by Circle. USDC is designed to provide a faster, safer, and more efficient way to send, spend, and exchange money around the world.",
+      "iconUrl": "https://www.circle.com/hubfs/Brand/USDC/USDC_icon_32x32.png"
+    }
+  },
+  "balance": {
+    "balance": "25250000",
+    "coinType": "0xa1ec7fc00a6f40db9693ad1415d0c193ad3906494428cf252621037bd7117e29::usdc::USDC",
+    "coinBalance": "20000000",
+    "addressBalance": "5250000"
+  }
+}
